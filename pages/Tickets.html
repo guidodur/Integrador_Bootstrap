@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--Se graba en Visual con Ctrl+S-->
+<html lang="“en”">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Proyecto integrador Front | Guido Durante
+    </title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark Encabezado">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/codoacodo.png" alt="" height="100" class="d-inline-block align-text-top">
+                    <span class="text-white fs-1 text-center">
+                        Conf&nbsp;Bs&nbsp;As
+                    </span>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#conferencia">
+                            La conferencia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link TextoGris" href="#oradores">
+                            Los oradores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link TextoGris" href="#lugarfecha">
+                            El lugar y la fecha
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link TextoGris" href="#formorador">
+                            Conviértete en orador
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link TextoVerde" href="./pages/Tickets.html">
+                            Comprar tickets
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section id="oradores" class="oradores">
+            <h2 class="Separador">
+                CONOCE A LOS
+                <div>
+                    ORADORES
+                </div>
+            </h2>
+            <div class="tarjeta">
+                <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs sosteniendo un iPhone" loading="lazy">
+                <div class="textotarjetas">
+                    <div class="pastillas">
+                        <h4 class="fondoamarillo">
+                            JavaScript
+                        </h4>
+                        <h4 class="fondocyan">
+                            React
+                        </h4>
+                    </div>
+                    <h3>
+                        Steve Jobs
+                    </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veritatis aliquam fugit
+                        necessitatibus saepe, deserunt illo aut repellat facere dolor vitae laboriosam autem iusto tempore
+                        quibusdam. Sed minima expedita maiores.
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="./assets/img/bill.jpg" alt="Bill Gates hablando" loading="lazy">
+                <div class="textotarjetas">
+                    <div class="pastillas">
+                        <h4 class="fondoamarillo">
+                            JavaScript
+                        </h4>
+                        <h4 class="fondocyan">
+                            React
+                        </h4>
+                    </div>
+                    <h3>
+                        Bill Gates
+                    </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veritatis aliquam fugit
+                        necessitatibus saepe, deserunt illo aut repellat facere dolor vitae laboriosam autem iusto tempore
+                        quibusdam. Sed minima expedita maiores.
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="./assets/img/ada.jpeg" alt="Cuadro de Ada Lovelace" loading="lazy">
+                <div class="textotarjetas">
+                    <div class="pastillas">
+                        <h4 class="fondogris">
+                            Negocios
+                        </h4>
+                        <h4 class="fondorojo">
+                            Startups
+                        </h4>
+                    </div>
+                    <h3>
+                        Ada Lovelace
+                    </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veritatis aliquam fugit
+                        necessitatibus saepe, deserunt illo aut repellat facere dolor vitae laboriosam autem iusto tempore
+                        quibusdam. Sed minima expedita maiores.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="formorador" class="convierteteenorador">
+            <h2 class="Separador">
+                CONVIÉRTETE EN UN
+                <div>
+                    ORADOR
+                </div>
+            </h2>
+            <p>
+                Anótate como orador para dar una 
+                <a class="hipervinculo" href="./pages/404.html">
+                    charla ignite
+                </a>. Cuéntanos de que quieres
+                hablar!
+            </p>
+            <form action="./pages/404.html" method="post" id="contact-form" class="formulario">
+                <div class="nya">
+                    <input type="text" id="name" class="celdanya" name="name" placeholder="Nombre" required>
+                    <input type="text" id="lastname" class="celdanya" name="lastname" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <textarea name="comentario" id="comentario" class="celdatxt" cols="50" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
+                    </textarea>
+                </div>
+                <div class="textoform">
+                    Recuerda incluir un título para tu charla
+                </div>
+                <div>
+                    <input class="botonenviar" type="submit" name="" id="" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="pie">
+            <ul class="listas list-unstyled">
+                <li>
+                    <a href="./pages/404.html" target="_blank" class="TextoPie text-white text-decoration-none">
+                        Preguntas frecuentes
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/404.html" target="_blank" class="TextoPie text-white text-decoration-none">
+                        Contáctenos
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/404.html" target="_blank" class="TextoPie text-white text-decoration-none">
+                        Prensa
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/404.html" target="_blank" class="TextoPie text-white text-decoration-none">
+                        Conferencias
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/404.html" target="_blank" class="TextoPie text-white text-decoration-none">
+                        Términos y condiciones
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/404.html" target="_blank" class="TextoPie text-white text-decoration-none">
+                        Privacidad
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/404.html" target="_blank" class="TextoPie text-white text-decoration-none">
+                        Estudiantes
+                    </a>
+                </li>
+            </ul>
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
