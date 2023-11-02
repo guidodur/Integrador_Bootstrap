@@ -1,56 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;700&display=swap');
-
+/*
 html{
-    font-size: 62.5%; /*1rem = 10px*/
-    line-height: 1.5;
-    font-weight: 300;
-    font-family: 'Noto Sans', sans-serif;
-}
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    text-align: center;
-}
-.Encabezado{
+    font-size: 62.5%; /*1rem = 10px*//*
+}*/
+header{
     background-color: rgb(53, 58, 64);
-    display: flex;
-    flex-direction: column;
-}
-.isologo{
-    height: 100px;
-}
-.Tsuperior{
-    color: white;
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 0;
-    margin-bottom: 30px;
-}
-.listas{
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    font-size: 2rem;
-    font-weight: 400;
-    & li{
-        margin: 10px 0 15px 0;
-        &:active{
-            padding: 10px;
-        }
-    }
-}
-.TextoBlanco{
-    color: white;
 }
 .TextoGris{
     color: darkgray;
 }
 .TextoVerde{
-    color: rgb(0, 128, 0);
+    color: rgb(0, 128, 0) !important;
+}
+.nav-item:hover{
+    filter: brightness(150%);
+    transition: filter 0.15s ease-in-out;
 }
 .conferencia{
     background: linear-gradient(to right, #00000085, #00000085), url(../assets/img/hawaii.jpg);
@@ -270,7 +233,6 @@ html{
     background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
     height: fit-content;
     bottom: 0px;
-    width: 100%;
 }
 .TextoPie{
     font-size: 1.5rem;
@@ -292,11 +254,11 @@ html{
     max-height: 604px;
     width: 100%;
     max-width: 780px;
-}
+}/*
 @media (min-width: 344px) {
     .isologoytexto{
         display:flex;
-    }
+    }/*
     .Tsuperior{
         line-height: 104px;
         margin: 0px;
@@ -312,14 +274,14 @@ html{
     }
     .TextoPie{
         font-size: 1.7rem;
-    }    
+    }*//*
 }
 @media (min-width: 581px) {
     .tarjeta{
         height: 650px;
     }
 }
-@media (min-width: 700px) {
+@media (min-width: 700px) {/*
     .listas{
         font-size: 2rem;
         margin: 0;
@@ -330,7 +292,7 @@ html{
         & li{
             margin: 0px 20px;
             }
-    }
+    }*//*
     .pie{
         height: 70px;
         display: flex;
@@ -360,10 +322,6 @@ html{
             flex-direction: row;
             align-items: center;
         }
-    }
-    .isologoytexto{
-        display: flex;
-        flex-direction: row;
     }
     .listas{
         display: flex;
@@ -498,4 +456,4 @@ html{
     .tarjeta{
         margin: 10px 15px 30px 15px;
     }
-}
+}*/
