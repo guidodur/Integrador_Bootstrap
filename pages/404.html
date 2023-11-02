@@ -9,46 +9,52 @@
         Proyecto integrador Front | Guido Durante
     </title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-    <header class="Encabezado">
-        <div class="isologoytexto">
-            <a href="../index.html">
-                <img class="isologo" src="../assets/img/codoacodo.png" alt="Logo de Codo a Codo" height="100"/>
-            </a>
-            <h2 class="Tsuperior">
-            Conf&nbsp;Bs&nbsp;As
-            </h2>
-        </div>        
-        <nav>
-            <ul class="listas">
-                <li>
-                    <a href="../index.html#conferencia" class="TextoBlanco">
-                        La conferencia
-                    </a>
-                </li>
-                <li>
-                    <a href="../index.html#oradores" class="TextoGris">
-                        Los oradores
-                    </a>
-                </li>
-                <li>
-                    <a href="../index.html#lugarfecha" class="TextoGris">
-                        El lugar y la fecha
-                    </a>
-                </li>
-                <li>
-                    <a href=../index.html#formorador" class="TextoGris">
-                        Conviértete en orador
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="TextoVerde">
-                        Comprar tickets
-                    </a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 flex-row justify-content-around navbar-dark">
+            <div class="d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
+                <a class="navbar-brand p-0 m-0" href="../index.html">
+                    <img src="../assets/img/codoacodo.png" alt="Logo de Codo a Codo" height="100" class="d-inline-block align-text-top">
+                </a>
+                <h2 class="m-0 fs-2 text-white">
+                    Conf&nbsp;Bs&nbsp;As
+                </h2>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-white" href="../index.html#conferencia">
+                            La conferencia
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link TextoGris" href="../index.html#oradores">
+                            Los oradores
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link TextoGris" href="../index.html#lugarfecha">
+                                El lugar y la fecha
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link TextoGris" href="../index.html#formorador">
+                                Conviértete en orador
+                        </a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link TextoVerde" href="./Tickets.html">
+                                Comprar tickets
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -60,44 +66,47 @@
             <!--<img src="../assets/img/404_lost.png" alt="404" loading="lazy" id="404img">-->
         </section>
     </main>
-    <footer class="pie">
-        <ul class="listas">
-            <li>
-                <a href="#" target="_blank" class="TextoPie TextoBlanco">
-                    Preguntas frecuentes
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank" class="TextoPie TextoBlanco">
-                    Contáctenos
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank" class="TextoPie TextoBlanco">
-                    Prensa
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank" class="TextoPie TextoBlanco">
-                    Conferencias
-                </a>
-            </li>
-            <li>
-                <a href=#" target="_blank" class="TextoPie TextoBlanco">
-                    Términos y condiciones
-                </a>
-            </li>
-            <li>
-                <a href=#" target="_blank" class="TextoPie TextoBlanco">
-                    Privacidad
-                </a>
-            </li>
-            <li>
-                <a href=#" target="_blank" class="TextoPie TextoBlanco">
-                    Estudiantes
-                </a>
-            </li>
-        </ul>
+    <footer>
+        <nav class="navbar navbar-expand-lg pie">
+            <ul class="navbar-nav d-flex flex-grow-1 justify-content-around align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 text-center" href="./404.html" target="_blank">
+                        Preguntas frecuentes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="./404.html" target="_blank">
+                        Contáctenos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="./404.html" target="_blank">
+                        Prensa
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="./404.html" target="_blank">
+                        Conferencias
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 text-center" href="./404.html" target="_blank">
+                        Términos y condiciones
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="./404.html" target="_blank">
+                        Privacidad
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="./404.html" target="_blank">
+                        Estudiantes
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

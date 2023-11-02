@@ -231,18 +231,16 @@ header{
 }
 .pie{
     background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
-    height: fit-content;
-    bottom: 0px;
-}
-.TextoPie{
-    font-size: 1.5rem;
-    font-weight: 400;
+    padding: 0px calc(20% - 171.3px);
+    bottom: 0px; /*ver si queda o se va*/
 }
 .sección404{
     font-size: 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 422px);
     height: fit-content;
     align-items: center;
 }
@@ -254,7 +252,21 @@ header{
     max-height: 604px;
     width: 100%;
     max-width: 780px;
-}/*
+}
+@media (min-width: 992px) {
+    .sección404{
+        min-height: calc(100vh - 200px);
+    }
+    .pie{
+        height: 100px;
+        & li{
+            text-align: center;
+            width: 134px;
+        }
+    }
+}
+
+/*
 @media (min-width: 344px) {
     .isologoytexto{
         display:flex;
