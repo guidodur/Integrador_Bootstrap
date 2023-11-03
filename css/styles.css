@@ -14,7 +14,7 @@ header{
 .nav-item:hover{
     filter: brightness(150%);
     transition: filter 0.15s ease-in-out;
-}
+}/*
 .conferencia{
     background: linear-gradient(to right, #00000085, #00000085), url(../assets/img/hawaii.jpg);
     background-position: center;
@@ -95,20 +95,20 @@ header{
         display: flex;
         padding: 0;
     }
-    & h4{                                   /*Temas de charla*/   
+    & h4{                                   /*Temas de charla*//*
         margin: 20px 5px 0px 0;
         font-size: 1.5rem;
         font-weight: 700;
         padding: 1px 5px;
         border-radius: 5px;        
     }
-    & h3{                                   /*Nombres*/
+    & h3{                                   /*Nombres*//*
         font-size: 2.3rem;
         font-weight: 500;
         padding-bottom: 15px; 
         text-align: left;
     }
-    & p{                                    /*Descripción*/
+    & p{                                    /*Descripción*//*
         font-size: 1.5rem;
         font-weight: 300;
         line-height:2;
@@ -154,38 +154,63 @@ header{
         }
 
     }
+}*/
+.mostrar{
+    display:block;
 }
-.convierteteenorador{
+.convierteteenorador{/*
     padding-top: 15px;
     height: fit-content;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 400;*/
     & a{
         color: black;
         text-decoration-line: underline;
         text-decoration-style: dotted;
     }
 }
-.formulario{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-}
-.nya{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 0;
-}
-.celdanya{
-    width: 90vw;
-    max-width: 750px;
-    margin: 10px 0;
-    height: calc(1em + 20px);
-    font-size: 1.7rem;
+.celda{
     border: 1px solid lightgray;
+    padding: 0 10px;
+    height: calc(1em + 25px);
     border-radius: 5px;
 }
+.media{
+    width: 87vw;
+    color: gray;
+}
+.ancha{
+    width: 87vw;
+    min-width: 420px;
+}
+.totalapagar{
+    background-color: rgb(204, 229, 255);
+    color: rgb(42, 86, 134);
+    border-radius: 5px;
+    height: calc(1em + 40px);
+    width: 87vw;
+}
+.vw100{
+    width: 90vw;
+}
+.boton{
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #96c93e;
+    color: white;
+    margin: 20px 0;
+    height: calc(1rem + 35px);
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        padding-left: 18px;
+        padding-right: 14px;
+        background-color: #b6f748;
+    }
+}
+
+    /*
 .celdatxt{
     width: 90vw;
     max-width: 750px;
@@ -195,10 +220,6 @@ header{
     font-size: 2rem;
     border: 1px solid lightgray;
     border-radius: 5px;
-}
-.textoform{
-    font-size: 1.5rem;
-    font-weight: 200;
 }
 .botonenviar{
     border-radius: 5px;
@@ -218,7 +239,7 @@ header{
         padding-right: 14px;
         background-color: #b6f748;
     }
-}
+}*//*
 .publicidad{
     display: flex;
     flex-direction: column;
@@ -228,11 +249,39 @@ header{
     width: 100vw;
     max-width: 560px;
     height:315px;
-}
+}*/
 .pie{
     background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
     padding: 0px calc(20% - 171.3px);
     bottom: 0px; /*ver si queda o se va*/
+}
+.cuadrocat{
+    width: 280px;
+    height: 250px;
+}
+.estudiante{
+    border: 2px solid #1284ff;
+    &:hover{
+        background-color: #c0ddfd;
+        transition: background-color 0.15s ease-in-out;
+    }
+}
+.trainee{
+    border: 2px solid #34aec1;
+    &:hover{
+        background-color: #8fc2ca;
+        transition: background-color 0.15s ease-in-out;
+    }    
+}
+.junior {
+    border: 2px solid #f6c940;
+    &:hover{
+        background-color: #f3e4b5;
+        transition: background-color 0.15s ease-in-out;
+    }     
+}
+.estudiante{
+    border: 2px solid #1284ff;
 }
 .sección404{
     font-size: 3rem;
@@ -253,6 +302,12 @@ header{
     width: 100%;
     max-width: 780px;
 }
+@media (min-width: 768px) {
+    .media{
+        width: 42.4vw;
+        min-width: 200px;
+    }
+}
 @media (min-width: 992px) {
     .sección404{
         min-height: calc(100vh - 200px);
@@ -263,6 +318,13 @@ header{
             text-align: center;
             width: 134px;
         }
+    }
+    .media{
+        min-width: none;
+        width: 420px;
+    }
+    .ancha{
+        width: 856px;
     }
 }
 

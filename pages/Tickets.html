@@ -58,105 +58,103 @@
         </nav>
     </header>
     <main>
-        <section id="oradores" class="oradores">
-            <h2 class="Separador">
-                CONOCE A LOS
-                <div>
-                    ORADORES
+            <section id="categorias" class="mt-4 mb-2 d-flex justify-content-center flex-wrap">
+                <div class="m-1 pt-3 cuadrocat estudiante d-flex flex-column align-items-center justify-content-around">
+                        <h3>
+                            Estudiante
+                        </h3>
+                        <h5>
+                            Tienen un descuento
+                        </h5>
+                        <h4>
+                            80%
+                        </h4>
+                        <p>
+                            * presentar documentación
+                        </p>
                 </div>
-            </h2>
-            <div class="tarjeta">
-                <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs sosteniendo un iPhone" loading="lazy">
-                <div class="textotarjetas">
-                    <div class="pastillas">
-                        <h4 class="fondoamarillo">
-                            JavaScript
-                        </h4>
-                        <h4 class="fondocyan">
-                            React
-                        </h4>
-                    </div>
+                <div class="m-1 pt-3 cuadrocat trainee d-flex flex-column align-items-center justify-content-around">
                     <h3>
-                        Steve Jobs
+                        Trainee
                     </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veritatis aliquam fugit
-                        necessitatibus saepe, deserunt illo aut repellat facere dolor vitae laboriosam autem iusto tempore
-                        quibusdam. Sed minima expedita maiores.
+                    <h5>
+                        Tienen un descuento
+                    </h5>
+                    <h4>
+                        50%
+                    </h4>
+                    <p>
+                        * presentar documentación
                     </p>
                 </div>
-            </div>
-            <div class="tarjeta">
-                <img src="./assets/img/bill.jpg" alt="Bill Gates hablando" loading="lazy">
-                <div class="textotarjetas">
-                    <div class="pastillas">
-                        <h4 class="fondoamarillo">
-                            JavaScript
-                        </h4>
-                        <h4 class="fondocyan">
-                            React
-                        </h4>
-                    </div>
+                <div class="m-1 pt-3 cuadrocat junior d-flex flex-column align-items-center justify-content-around">
                     <h3>
-                        Bill Gates
+                        Junior
                     </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veritatis aliquam fugit
-                        necessitatibus saepe, deserunt illo aut repellat facere dolor vitae laboriosam autem iusto tempore
-                        quibusdam. Sed minima expedita maiores.
+                    <h5>
+                        Tienen un descuento
+                    </h5>
+                    <h4>
+                        15%
+                    </h4>
+                    <p>
+                        * presentar documentación
                     </p>
                 </div>
-            </div>
-            <div class="tarjeta">
-                <img src="./assets/img/ada.jpeg" alt="Cuadro de Ada Lovelace" loading="lazy">
-                <div class="textotarjetas">
-                    <div class="pastillas">
-                        <h4 class="fondogris">
-                            Negocios
-                        </h4>
-                        <h4 class="fondorojo">
-                            Startups
-                        </h4>
+            </section>
+            <section id="formcompra" class="d-flex flex-column align-items-center">
+                <h2 class="fs-5 mb-0 fw-light">
+                    VENTA
+                </h2>
+                <h3 class="fs-1">
+                    VALOR DE TICKET $200
+                </h3> 
+                <form action="./pages/404.html" method="post" id="contact-form" class="w-50 fs-5 d-flex flex-column align-items-center">
+                    <div class="m-3 d-flex justify-content-center flex-wrap">
+                        <div>
+                            <input type="text" id="name" class="celda media me-2 mt-3 form-control" name="name" placeholder="Nombre" required>
+                            <div class="invalid-feedback" id="mensajeErrorNombre">
+                                Ingrese su nombre
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" id="lastname" class="celda media ms-2 mt-3 form-control" name="lastname" placeholder="Apellido" required>
+                            <div class="invalid-feedback ms-2" id="mensajeErrorApellido">
+                                Ingrese su apellido
+                            </div>
+                        </div>
+                        <div>
+                            <input type="email" id="email" class="celda ancha mt-4" name="email" placeholder="Correo" required>
+                            <div class="invalid-feedback ms-2" id="mensajeErrorEmail">
+                                Ingrese un email correcto
+                            </div>
+                        </div>
+                        
+                        <div class="textoform me-2 mt-3 d-flex flex-column align-items-start">
+                            Cantidad
+                            <input type="text" id="cantidad" class="celda media my-2" name="quantity" placeholder="Cantidad" required>
+                            <div class="invalid-feedback ms-2" id="mensajeErrorCantidad">
+                                Ingrese una cantidad válida
+                            </div>
+                        </div>
+                        <div class="textoform ms-2 mt-3 d-flex flex-column align-items-start">
+                            Categoría
+                            <select name="categoria" id="categoria" class="celda media my-2">
+                                <option selected="" value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div>
+                        <div class="totalapagar ancha mt-3 mb-2 p-3 d-flex align-items-center">
+                            Total a Pagar: $
+                        </div>
                     </div>
-                    <h3>
-                        Ada Lovelace
-                    </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veritatis aliquam fugit
-                        necessitatibus saepe, deserunt illo aut repellat facere dolor vitae laboriosam autem iusto tempore
-                        quibusdam. Sed minima expedita maiores.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="formorador" class="convierteteenorador">
-            <h2 class="Separador">
-                CONVIÉRTETE EN UN
-                <div>
-                    ORADOR
-                </div>
-            </h2>
-            <p>
-                Anótate como orador para dar una 
-                <a class="hipervinculo" href="./pages/404.html">
-                    charla ignite
-                </a>. Cuéntanos de que quieres
-                hablar!
-            </p>
-            <form action="./pages/404.html" method="post" id="contact-form" class="formulario">
-                <div class="nya">
-                    <input type="text" id="name" class="celdanya" name="name" placeholder="Nombre" required>
-                    <input type="text" id="lastname" class="celdanya" name="lastname" placeholder="Apellido" required>
-                </div>
-                <div>
-                    <textarea name="comentario" id="comentario" class="celdatxt" cols="50" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
-                    </textarea>
-                </div>
-                <div class="textoform">
-                    Recuerda incluir un título para tu charla
-                </div>
-                <div>
-                    <input class="botonenviar" type="submit" name="" id="" value="Enviar">
-                </div>
-            </form>
-        </section>
+                    <div class="vw100 d-flex justify-content-center flex-wrap">
+                        <input class="media boton me-2" type="reset" name="reset" id="reset" value="Borrar">
+                        <input class="media boton ms-2" type="submit" name="submit" id="submit" value="Resumen">
+                    </div>
+                </form>
+            </section>
     </main>
     <footer>
         <nav class="navbar navbar-expand-lg pie">
@@ -200,5 +198,6 @@
         </nav>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/tickets.js"></script>
 </body>
 </html>
