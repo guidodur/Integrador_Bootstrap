@@ -1,4 +1,4 @@
-const valorTicket = 200;
+const ValorTicket = 200;
 
 let descuentoEstudiante = 80;
 let descuentoTrainee = 50;
@@ -15,6 +15,8 @@ let divErrorCantidad    = document.getElementById("mensajeErrorCantidad");
 let categoria           = document.getElementById("categoria");
 let btnsubmit           = document.getElementById("submit");
 let btnreset            = document.getElementById("reset");
+let PrecioTotal         = document.getElementById("valor");
+
 
 const sacarerrorclass = () => {
     let listanodos = document.querySelectorAll(".form-control, .form-select");
@@ -71,7 +73,8 @@ const Total = () => {
             ValorTotalTickets = ValorTotalTickets - (descuentoJunior / 100 * ValorTotalTickets);
             break;  
     }
-    TotalaPagar.innerHTML = ValorTotalTickets;
+    PrecioTotal.innerHTML = ValorTotalTickets;
+    return;
 }
 
 btnsubmit.addEventListener('click', Total);
