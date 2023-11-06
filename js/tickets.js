@@ -63,13 +63,13 @@ const Total = () => {
     let ValorTotalTickets = (canttkt.value) * ValorTicket;
 
     switch (categoria.value){
-        case "1":
+        case "estudiante":
             ValorTotalTickets = ValorTotalTickets - (descuentoEstudiante / 100 * ValorTotalTickets);
             break;
-        case "2":
+        case "trainee":
             ValorTotalTickets = ValorTotalTickets - (descuentoTrainee / 100 * ValorTotalTickets);
             break;
-        case "3":
+        case "junior":
             ValorTotalTickets = ValorTotalTickets - (descuentoJunior / 100 * ValorTotalTickets);
             break;  
     }
@@ -81,9 +81,21 @@ btnsubmit.addEventListener('click', Total);
 
 const resetTotal = () => {
     sacarerrorclass ();
-    TotalaPagar.innerHTML = "";
+    PrecioTotal.innerHTML = "";
     return;
 }
 
 
 btnreset.addEventListener('click', resetTotal);
+
+let Sumarestudiante = document.getElementById("Estudiante1");
+
+const UnticketEstudiante = () => {
+    //canttkt.value = canttkt.value + 1;
+    //console.log(canttkt);
+    //console.log(categoria.value);
+    return;
+}
+
+
+Sumarestudiante.addEventListener('click', UnticketEstudiante);
